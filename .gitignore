@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# env
+.env
+
+# uploads
+uploads/
+
+# logs
+*.log
+logs/
+
+# coverage
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# misc
+.history/
+
+skills/
+
+docs/
