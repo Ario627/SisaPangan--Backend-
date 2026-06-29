@@ -1,4 +1,4 @@
-import { Grade, KategoriPenyaluran } from '../types';
+import { Grade, KategoriPenyaluran, ScoringWeights } from '../types';
 
 export const GRADE_KATEGORI_MAP: Record<Grade, KategoriPenyaluran> = {
   [Grade.FRESH]: KategoriPenyaluran.JUAL_NORMAL,
@@ -12,13 +12,13 @@ export const GRADE_ESTIMASI_TERSIAPATKAN: Record<Grade, number> = {
 
 export const JARAK_MAX_KM = 50;
 
-export const SCORING_WEIGHTS_WITH_DISTANCE = {
+export const SCORING_WEIGHTS_WITH_DISTANCE: ScoringWeights = {
   jarak: 0.5,
   kapasitas: 0.3,
   kategori: 0.2,
 };
 
-export const SCORING_WEIGHTS_WITHOUT_DISTANCE = {
+export const SCORING_WEIGHTS_WITHOUT_DISTANCE: ScoringWeights = {
   kapasitas: 0.6,
   kategori: 0.4,
 };

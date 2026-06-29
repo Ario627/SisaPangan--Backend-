@@ -39,3 +39,9 @@ export interface RecommendationResult {
     jarakTersedia: boolean;
     peringatan?: string;
 }
+
+export interface ScoringWeights {
+    jarak?: number;
+    kapasitas: number;
+    kategori: number;
+}
